@@ -1,5 +1,5 @@
 # The URL the site will be built for
-base_url = "https://heatwavemag.info"
+base_url = "https://beaconhillsolidarity.github.io"
 
 default_language = "en"
 
@@ -32,7 +32,7 @@ highlight_themes_css = [
 [languages]
 
 [languages.en]
-title = "Heatwave"
+title = "Beacon Hill Solidarity"
 description = " "
 # The taxonomies to be rendered for the site and their configuration of the default languages
 taxonomies = [
@@ -44,11 +44,10 @@ feed_filenames = ["rss.xml"]
 
 [languages.en.translations]
 blog = " "
-magazine = "Magazine"
 about = "About"
-submissions = "Submissions"
-subscribe = "Subscribe"
-projects = "Print"
+volunteer = "Get Involved"
+donate = "Donate"
+projects = "News"
 recent_projects = ""
 more_projects = ""
 recent_blog_posts = "Recently Released"
@@ -84,9 +83,8 @@ menu_items = [
     { name = "blog", url = "$LANG_BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
     # tag is not a zola section, it's just a link.
     { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
-    { name = "magazine", url = "$LANG_BASE_URL/magazine", show_recent = false },
-    { name = "submissions", url = "$LANG_BASE_URL/submissions", show_recent = false },
-    { name = "subscribe", url = "$LANG_BASE_URL/subscribe", show_recent = false },
+    { name = "volunteer", url = "$LANG_BASE_URL/volunteer", show_recent = false },
+    { name = "donate", url = "$LANG_BASE_URL/donate", show_recent = false },
     { name = "projects", url = "$LANG_BASE_URL/projects",  show_recent = false},
     { name = "tags", url = "$LANG_BASE_URL/tags" },
 ]
@@ -98,15 +96,15 @@ max_width = 2500
 # Open Graph Protocol objects. See: https://ogp.me/
 [extra.ogp]
 locale = "en_US"
-first_name = "Heatwave"
+first_name = "beaconhillsolidarity"
 last_name = ""
 gender = ""
-username = "heatwavemag"
+username = "beaconhillsolidarity"
 
 # Footer social links; full options listed in macros/social.html
 [extra.social]
-email = "heatwavemag@proton.me"
-#github = "heatwavemag"
+email = "beaconhillsolidarity@proton.me"
+#github = "beaconhillsolidarity"
 instagram = "htwvmag"
 twitter = "heatwvmag"
 youtube = "UCqWJW3ld7sN6sVsvTe6jY_w"
