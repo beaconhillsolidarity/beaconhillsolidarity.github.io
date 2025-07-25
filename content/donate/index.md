@@ -1,7 +1,7 @@
 +++
 title = " "
 render = true
-template = "donate".html"
+template = "donate.html"
 +++
 
 
