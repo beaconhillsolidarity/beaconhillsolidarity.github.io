@@ -43,11 +43,11 @@ taxonomies = [
 feed_filenames = ["rss.xml"]
 
 [languages.en.translations]
-blog = " "
 about = "About"
 volunteer = "Get Involved"
 donate = "Donate"
-projects = "News"
+projects = " "
+blog = "News"
 recent_projects = ""
 more_projects = ""
 recent_blog_posts = "Recently Released"
@@ -76,15 +76,15 @@ date_format = "%B %e, %Y"
 env = "ZOLA_ENV"
 
 # Color theme mode. Options: light, dark, auto (automatically switch depending on OS/user agent settings)
-color_mode = "dark"
+color_mode = "light"
 
 # List of Papaya navigational menu items. Used to construct the navigation bar. See the README for item schema.
 menu_items = [
-    { name = "blog", url = "$LANG_BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
     # tag is not a zola section, it's just a link.
     { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
     { name = "volunteer", url = "$LANG_BASE_URL/volunteer", show_recent = false },
     { name = "donate", url = "$LANG_BASE_URL/donate", show_recent = false },
+    { name = "blog", url = "$LANG_BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
     { name = "projects", url = "$LANG_BASE_URL/projects",  show_recent = false},
     { name = "tags", url = "$LANG_BASE_URL/tags" },
 ]
@@ -105,7 +105,7 @@ username = "beaconhillsolidarity"
 [extra.social]
 email = "beaconhillsolidarity@proton.me"
 #github = "beaconhillsolidarity"
-instagram = "htwvmag"
+instagram = "beaconhillsolidarity"
 twitter = "heatwvmag"
 youtube = "UCqWJW3ld7sN6sVsvTe6jY_w"
 facebook = "htwvmag"

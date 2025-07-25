@@ -4,8 +4,7 @@
 <html lang="{% if lang %}{{ lang }}{% else %}en{% endif %}" prefix="og: http://ogp.me/ns#">
 <head>
 
-<!-- 100% privacy-first analytics -->
-<script async src="https://scripts.simpleanalyticscdn.com/latest.js"></script>
+
 
     <meta charset="utf-8">
     <meta name="HandheldFriendly" content="True">
@@ -38,7 +37,7 @@
     {% set base_url = get_url(path="", lang=lang) %}
     <header>
         <h1 class="site-header">
-            {% set imgTitle = resize_image(path="/static/heatwave-logo-transparent.png", width=160, op="fit_width") %}
+            {% set imgTitle = resize_image(path="/static/logo-transparent.png", width=160, op="fit_width") %}
             <a href="{{ base_url }}"><img style="width:40px; height:40px" src="{{imgTitle.url}}"></a>
             <!--<a href="{{ base_url }}">{{config.title}}</a>-->
         </h1>

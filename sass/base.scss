@@ -36,9 +36,6 @@ summary {
 .container {
     max-width: 42em !important;
     margin: 2em auto 0 !important;
-	width: 100% !important;
-	padding-right: 0 !important;
-	padding-left: 0 !important;
 }
 
 main {
@@ -88,31 +85,31 @@ h3 {
 
 a {
     color: var(--link-color);
-    text-decoration: none !important;
+    text-decoration: none;
 }
 
 a:active,
 a:hover {
-    outline: 0 !important;
+    outline: 0;
 }
 
 a:hover,
 a:focus {
-    color: var(--link-hover-color) !important;
-    border-bottom: 1px solid var(--link-hover-line-color) !important;
-    transition: all 0.1s linear !important;
+    color: var(--link-hover-color);
+    border-bottom: 1px solid var(--link-hover-line-color);
+    transition: all 0.1s linear;
 }
 
 a:active {
-    color: var(--link-hover-color) !important;
-    opacity: 0.9 !important;
-    border-bottom: 1px solid var(--link-hover-line-color) !important;
-    transition: all 0.1s linear !important;
+    color: var(--link-hover-color);
+    opacity: 0.9;
+    border-bottom: 1px solid var(--link-hover-line-color);
+    transition: all 0.1s linear;
 }
 
 a.active {
-    color: var(--link-hover-color) !important;
-    transition: all 0.1s linear !important;
+    color: var(--link-hover-color);
+    transition: all 0.1s linear;
 }
 
 /* Table */
@@ -160,8 +157,8 @@ blockquote {
 }
 
 p {
-    margin-top: 0.5em !important;
-    margin-bottom: 0.5em !important;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
 }
 
 hr {
@@ -203,7 +200,6 @@ header {
             list-style-type: none;
             display: inline-block;
             float: right;
-	    margin-top: inherit;	
         }
 
         li {
@@ -560,7 +556,6 @@ footer {
     }
 
     .site-header {
-        margin-left: 0.5em;
         text-align: center;
     }
 
@@ -594,10 +589,6 @@ footer {
 
     .index-listing {
         max-width: none;
-    }
-
-    article {
-        padding: 0 1.25em 0.5em 1.25em;
     }
 }
 
