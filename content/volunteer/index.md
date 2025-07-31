@@ -66,6 +66,11 @@ integrity="sha384-X38yfunGUhNzHpBaEBsWLO+A0HDYOQi8ufWDkZ0k9e0eXz/tH3II7uKZ9msv++
     required placeholder="burns.charles@nuke.com"/>
 </fieldset>
 
+<fieldset class="pure-group honeypot-field">
+    <label for="honeypot">To help avoid spam, utilize a Honeypot technique with a hidden text field; must be empty to submit the form! Otherwise, we assume the user is a spam bot.</label>
+    <input id="honeypot" type="text" name="honeypot" value="" />
+</fieldset>
+
 <button class="button-success pure-button button-xlarge">
     <i class="fa fa-paper-plane"></i>&nbsp;Send</button>
 </div>

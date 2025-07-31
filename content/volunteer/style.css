@@ -2,7 +2,7 @@ body {
   margin: 2em;
 }
 aside {
-    background: #1f8dd6; /* same color as selected state on site menu */
+    background: #000000; /* same color as selected state on site menu */
     padding: 0.3em 1em;
     border-radius: 3px;
     color: #fff;
@@ -24,13 +24,13 @@ textarea {
   color: white;
   border-radius: 4px;
   text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
-  background: rgb(28, 184, 65); /* this is a green */
+  background: rgb(1, 1, 1); /* this is a black */
 }
-.button-xlarge {
-  font-size: 125%;
+.button-large {
+  font-size: 100%;
 }
 button {
-  float: right;
+  float: left;
 }
 #name, #email {
   width: 50%;
