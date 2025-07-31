@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Beacon Hill Solidarity</title>
+      <link>https://beaconhillsolidarity.github.io</link>
+      <description> </description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://beaconhillsolidarity.github.io/rss.xml/" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 16 Jun 2025 00:00:00 +0000</lastBuildDate>
+      
+      <item>
+          <title>Placeholder for first event</title>
+          <pubDate>Mon, 16 Jun 2025 00:00:00 +0000</pubDate>
+          <author>mapaches clandestinxs &amp; cuauhtli</author>
+          <link>https://beaconhillsolidarity.github.io/blog/revrep-061625/</link>
+          <guid>https://beaconhillsolidarity.github.io/blog/revrep-061625/</guid>
+          <description xml:base="https://beaconhillsolidarity.github.io/blog/revrep-061625/">&lt;p&gt;t&#x27;s a beautiful day in this neighborhood A beautiful day for a neighbor
+Would you be mine? Could you be mine?&lt;&#x2F;p&gt;</description>
+      </item>
+      
+      
+    </channel>
+</rss>
