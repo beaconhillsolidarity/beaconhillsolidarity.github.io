@@ -50,7 +50,7 @@ projects = " "
 blog = "News"
 recent_projects = ""
 more_projects = ""
-recent_blog_posts = "Recently Released"
+recent_blog_posts = "Upcoming"
 more_blog_posts = ""
 # tag = "Tag" ## original setting
 # tags = "Tags" ## original setting
@@ -106,11 +106,11 @@ username = "beaconhillsolidarity"
 email = "beaconhillsolidarity@proton.me"
 #github = "beaconhillsolidarity"
 instagram = "beaconhillsolidarity"
-twitter = "heatwvmag"
-youtube = "UCqWJW3ld7sN6sVsvTe6jY_w"
-facebook = "htwvmag"
-tiktok = "@htwvmag"
-patreon = "158785705"
+#twitter = "heatwvmag"
+#youtube = "UCqWJW3ld7sN6sVsvTe6jY_w"
+#facebook = "htwvmag"
+#tiktok = "@htwvmag"
+#patreon = "158785705"
 
 
 # CDN links

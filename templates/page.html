@@ -34,7 +34,7 @@
     <meta property="og:image:alt" content="{{ page.extra.featured_image_alt }}">
     {% endif %}
 {% else %}
-    {% set image = resize_image(path="/static/banner-bg-black.jpg", width=1200, op="fit_width", quality=90) %}
+    {% set image = resize_image(path="/static/banner.jpg", width=1200, op="fit_width", quality=90) %}
     <meta property="og:image" content="{{ image.url | safe }}">
     <meta property="twitter:image" content="{{ image.url | safe }}">
     {% endif %}

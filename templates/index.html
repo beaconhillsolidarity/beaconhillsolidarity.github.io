@@ -7,7 +7,7 @@
     <meta property="og:type" content="profile">
     <meta property="og:url" content="{{ config.base_url}}">
     <meta property="twitter:url"  content="{{ config.base_url}}">
-    {% set image = resize_image(path="/static/banner-bg-black.png", width=1200, op="fit_width", quality=90) %}
+    {% set image = resize_image(path="/static/banner.jpg", width=1200, op="fit_width", quality=90) %}
     <meta property="og:image" content="{{ image.url | safe }}">
     <meta property="twitter:image" content="{{ image.url | safe }}">
 <meta name="twitter:description" content="Heatwave is a multi-media project dedicated to sharing experiences and strategizing together in preparation for the next round of struggles to break free from the infernal prison of capital.">
@@ -16,7 +16,7 @@
 {% block content %}
 <main id="main" class="index" tabindex="-1">
     <section>
-        {% set banner = resize_image(path="/static/banner.png", width=672, op="fit_width") %}
+        {% set banner = resize_image(path="/static/banner.jpg", width=672, op="fit_width") %}
         <img src="{{ banner.url }}" class="index-banner" alt="A misty forest."/>
         <p>
             {{ config.description }}
