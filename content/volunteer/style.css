@@ -30,7 +30,7 @@ textarea {
   font-size: 100%;
 }
 button {
-  float: left;
+  float: right;
 }
 #name, #email {
   width: 50%;
