@@ -28,6 +28,7 @@ Every one has a role to play in building this community. Let us know if you have
 
 <body>
   <!-- <h2 class="content-head is-center">Contact Us!</h2> -->
+  <!--  inspo for this form taken from here: https://github.com/dwyl/learn-to-send-email-via-google-script-html-no-server -->
   <aside>
        <p>
           <!--  We would <em>love</em> to hear from you! </p> -->
