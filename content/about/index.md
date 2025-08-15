@@ -9,6 +9,13 @@ Beacon Hill Solidarity is a grassroots neighborhood union dedicated to bringing 
 <br />
 <br />
 Join us as we work to connect those in need with those who can offer support, find solutions to our common grievances, and *unify us into something greater than the sum of our parts.*
-
+<br />
+<br />
+> *In the current vacuum of human connection, where so many people are left isolated, disempowered, and
+> fearful of the future, we have a unique opportunity not to just to repair the social fabric,
+> but to reweave it, reaffirming the very notion of community as a revolutionary concept – a living culture of solidarity and self-governance that defies all forms of domination, oppression and exploitation.*
+<br />
+<br />
+&mdash; Building Power in Place
 
 &nbsp;
