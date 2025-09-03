@@ -13,8 +13,4 @@ commands:
 
 2. Build and serve project locally for testing
 - zola build
-- zola serve
-
-
-# need to add more info here
-# heatwavemag.github.io
+- zola serve (console should give you local testing address. like: 'http://127.0.0.1:1111')

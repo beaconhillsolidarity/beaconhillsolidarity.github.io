@@ -8,35 +8,40 @@
     text-align: center;
 }
 
+.bhs-center-box {
+    margin: 0 auto;
+    max-width: 800px;
+    // change width for current message...
+    // width: 25%;
+    width: 33%;
+}
+
 a.bhs-button {
   font-family: inherit;
   font-size: 20px;
-  padding: 0.7em 1em;
-  padding-left: 0.9em;
-  display: flex;
-  align-items: center;
-  border: none;
-  border-radius: 16px;
+ 
   overflow: hidden;
   transition: all 0.2s;
   cursor: pointer;
 
-    border: 1px solid black;
-    border-radius: 10px;
-    display: flex;
-    justify-content: space-around;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 
-    margin-top: 25px;
-    margin-bottom: 25px;
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  //  border: none;
+  // border-radius: 16px;
+  border: 1px solid black;
+  border-radius: 10px;
 }
 
-.bhs-center-box {
-    margin: 0 auto;
-    max-width: 800px;
-    width: 25%;
-}
+
 
 a.bhs-button span {
+  width: 75%;
   display: block;
   margin-left: 0.3em;
   transition: all 0.3s ease-in-out;
@@ -48,21 +53,34 @@ a.bhs-button i {
   transition: transform 0.3s ease-in-out;
 }
 
+
 a.bhs-button:hover .icon-wrapper {
   animation: fly-1 0.6s ease-in-out infinite alternate;
 }
 
-a.bhs-button:hover i {
- // transform: translateX(1.2em) rotate(45deg) scale(1.1);
+a.bhs-button-disabled:hover {
+  cursor: not-allowed;
+  color: grey;
+  border-color: grey;
 }
 
-a.bhs-button:hover span {
-  //transform: translateX(5em);
-}
 
-a.bhs-button:active {
-  //transform: scale(0.95);
-}
+// code for hover & active states if you like:
+
+// a.bhs-button:hover i {
+//  // transform: translateX(1.2em) rotate(45deg) scale(1.1);
+// }
+
+// a.bhs-button:hover span {
+//   //transform: translateX(5em);
+// }
+
+// a.bhs-button:active {
+//   //transform: scale(0.95);
+// }
+
+
+
 
 @keyframes fly-1 {
   from {
@@ -75,3 +93,14 @@ a.bhs-button:active {
        transform: scale(1.25);
   }
 }
+
+
+// mobile selectors:
+@media (min-width:320px) and (max-width:800px)  { 
+  /* smartphones, portrait iPhone -->  --> ipad sizes */
+  .bhs-center-box {
+    width: 50%;
+  }
+
+}
+
