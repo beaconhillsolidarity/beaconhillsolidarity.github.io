@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Beacon Hill Solidarity</title>
+      <link>https://beaconhillsolidarity.github.io</link>
+      <description> </description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://beaconhillsolidarity.github.io/rss.xml/" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Wed, 06 Aug 2025 00:00:00 +0000</lastBuildDate>
+      
+      <item>
+          <title>Community Potluck</title>
+          <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+          <author> </author>
+          <link>https://beaconhillsolidarity.github.io/blog/potluck-080625/</link>
+          <guid>https://beaconhillsolidarity.github.io/blog/potluck-080625/</guid>
+          <description xml:base="https://beaconhillsolidarity.github.io/blog/potluck-080625/">&lt;p&gt;Join us for our first community potluck and BBQ! Saturday, September 27&lt;sup&gt;th&lt;&#x2F;sup&gt; at 3 PM, location TBD&lt;&#x2F;p&gt;</description>
+      </item>
+      
+      
+      <item>
+          <title>Join Us!</title>
+          <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+          <author> </author>
+          <link>https://beaconhillsolidarity.github.io/blog/general-080425/</link>
+          <guid>https://beaconhillsolidarity.github.io/blog/general-080425/</guid>
+          <description xml:base="https://beaconhillsolidarity.github.io/blog/general-080425/">&lt;p&gt;Join the Beacon Hill Neighborhood Union!&lt;&#x2F;p&gt;</description>
+      </item>
+      
+    </channel>
+</rss>
