@@ -85,11 +85,9 @@ menu_items = [
     # tag is not a zola section, it's just a link.
     { name = "about", url = "$LANG_BASE_URL/about", show_recent = false },
     { name = "volunteer", url = "$LANG_BASE_URL/volunteer", show_recent = false },
-    { name = "donate", url = "$LANG_BASE_URL/donate", show_recent = false },
     { name = "blog", url = "$LANG_BASE_URL/blog", show_recent = true, recent_items = 3, recent_trans_key = "recent_blog_posts", more_trans_key = "more_blog_posts" },
     { name = "calendar", url = "$LANG_BASE_URL/calendar", show_recent = false },
     { name = "projects", url = "$LANG_BASE_URL/projects",  show_recent = false},
-    { name = "findus", url = "$LANG_BASE_URL/findus",  show_recent = false},
     { name = "tags", url = "$LANG_BASE_URL/tags" },
 ]
 
