@@ -2,6 +2,11 @@
 title = "Community Potluck"
 date = 2025-08-06
 authors = [" "]
+
+[extra]
+event_date = 2025-09-27
+event_time = "3:00 PM"
+location = "Location TBD"
 +++
 
 Join us for our first community potluck and BBQ! Saturday, September 27<sup>th</sup> at 3 PM, location TBD

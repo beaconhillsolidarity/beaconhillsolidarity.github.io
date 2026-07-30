@@ -1,0 +1,70 @@
+{% import "macros/page.html" as page_macros %}
+{% extends "base.html" %}
+
+{% block title %}{{ page.title }} - {{ config.title }}{% endblock title %}
+
+{% block extra_head %}
+<script src="{{ config.extra.cdn.fullcalendar }}"></script>
+<style>
+    #calendar {
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+    .fc-event-location {
+        font-size: 0.85em;
+        opacity: 0.85;
+    }
+</style>
+{% endblock extra_head %}
+
+{% block content %}
+<article class="post">
+    <header>
+        <h1>{{ page.title }}</h1>
+    </header>
+    <div class="content">
+        {{ page.content | safe }}
+    </div>
+</article>
+
+<div id="calendar"></div>
+
+{% set blog = get_section(path="blog/_index.md") %}
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        height: 'auto',
+        events: [
+            {% for p in blog.pages %}
+            {% if p.extra.event_date %}
+            {
+                title: {{ p.title | json_encode | safe }},
+                start: "{{ p.extra.event_date | date(format='%Y-%m-%d') }}",
+                url: "{{ p.permalink | safe }}",
+                extendedProps: {
+                    location: {{ p.extra.location | default(value="") | json_encode | safe }},
+                    time: {{ p.extra.event_time | default(value="") | json_encode | safe }}
+                }
+            },
+            {% endif %}
+            {% endfor %}
+        ],
+        eventDidMount: function (info) {
+            var details = [];
+            if (info.event.extendedProps.time) { details.push(info.event.extendedProps.time); }
+            if (info.event.extendedProps.location) { details.push(info.event.extendedProps.location); }
+            if (details.length) {
+                var el = document.createElement('div');
+                el.className = 'fc-event-location';
+                el.textContent = details.join(' \u00b7 ');
+                info.el.appendChild(el);
+                info.el.title = details.join(' \u00b7 ');
+            }
+        }
+    });
+    calendar.render();
+});
+</script>
+{% endblock content %}
