@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+      <title>Beacon Hill Solidarity</title>
+      <link>https://southendsolidarity.org</link>
+      <description> </description>
+      <generator>Zola</generator>
+      <language>en</language>
+      <atom:link href="https://southendsolidarity.org/rss.xml/" rel="self" type="application/rss+xml"/>
+      <lastBuildDate>Mon, 03 Aug 2026 00:00:00 +0000</lastBuildDate>
+      
+      <item>
+          <title>August 14th: Potluck in the Park</title>
+          <pubDate>Mon, 03 Aug 2026 00:00:00 +0000</pubDate>
+          <author> </author>
+          <link>https://southendsolidarity.org/blog/august-14th-potluck-in-the-park/</link>
+          <guid>https://southendsolidarity.org/blog/august-14th-potluck-in-the-park/</guid>
+          <description xml:base="https://southendsolidarity.org/blog/august-14th-potluck-in-the-park/">&lt;p&gt;Come meet your neighbors and share food at our next potluck. We will have games, banner making and other activities. We will also facilitate a brief &quot;asks and offers&quot; space where neighbors can make requests (asks) for needs (help with something, need items) or where neighbors can provide support (offers) when they have an abundance of something (too many figs in their yard or amble time to drive someone to an appointment).&lt;&#x2F;p&gt;
+</description>
+      </item>
+      
+      
+      <item>
+          <title>Community Potluck!</title>
+          <pubDate>Fri, 31 Jul 2026 00:00:00 +0000</pubDate>
+          <author> </author>
+          <link>https://southendsolidarity.org/blog/community-potluck/</link>
+          <guid>https://southendsolidarity.org/blog/community-potluck/</guid>
+          <description xml:base="https://southendsolidarity.org/blog/community-potluck/">&lt;p&gt;We&#x27;ll have optional activities and games. Bring food to share!&lt;&#x2F;p&gt;
+&lt;p&gt;If you have something you need support with or can offer to help, we&#x27;ll host a circle of &quot;asks and offers&quot; during the potluck. See you there!&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;uploads&#x2F;3.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;&lt;img src=&quot;&#x2F;uploads&#x2F;1.png&quot; alt=&quot;&quot; &#x2F;&gt;&lt;&#x2F;p&gt;
+</description>
+      </item>
+      
+      
+      <item>
+          <title>Community Assembly and Potluck</title>
+          <pubDate>Mon, 23 Feb 2026 00:00:00 +0000</pubDate>
+          <author> </author>
+          <link>https://southendsolidarity.org/blog/potluck-031426/</link>
+          <guid>https://southendsolidarity.org/blog/potluck-031426/</guid>
+          <description xml:base="https://southendsolidarity.org/blog/potluck-031426/">&lt;p&gt;Join us for our first neighborhood assembly! Saturday, March 14&lt;sup&gt;th&lt;&#x2F;sup&gt; at 12:30 PM, 1607 S Forest St.&lt;&#x2F;p&gt;</description>
+      </item>
+      
+      
+      <item>
+          <title>Community Potluck</title>
+          <pubDate>Wed, 06 Aug 2025 00:00:00 +0000</pubDate>
+          <author> </author>
+          <link>https://southendsolidarity.org/blog/potluck-080625/</link>
+          <guid>https://southendsolidarity.org/blog/potluck-080625/</guid>
+          <description xml:base="https://southendsolidarity.org/blog/potluck-080625/">&lt;p&gt;Join us for our first community potluck and BBQ! Saturday, September 27&lt;sup&gt;th&lt;&#x2F;sup&gt; at 3 PM, location TBD&lt;&#x2F;p&gt;</description>
+      </item>
+      
+      
+      <item>
+          <title>Join Us!</title>
+          <pubDate>Mon, 04 Aug 2025 00:00:00 +0000</pubDate>
+          <author> </author>
+          <link>https://southendsolidarity.org/blog/general-080425/</link>
+          <guid>https://southendsolidarity.org/blog/general-080425/</guid>
+          <description xml:base="https://southendsolidarity.org/blog/general-080425/">&lt;p&gt;Join the Beacon Hill Neighborhood Union!&lt;&#x2F;p&gt;</description>
+      </item>
+      
+    </channel>
+</rss>

@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: http://ogp.me/ns#">
+<head>
+
+
+
+    <meta charset="utf-8">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer-when-downgrade">
+
+    <title>Events Calendar - Beacon Hill Solidarity</title>
+    <meta name="description" content=" ">
+
+    
+    <link rel="stylesheet" href="https://southendsolidarity.org/base.css">
+    <link rel="stylesheet" href="https://southendsolidarity.org/light.css">
+
+    <link rel="preload" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.3.0&#x2F;css&#x2F;all.min.css as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <noscript><link rel="stylesheet" href=https:&#x2F;&#x2F;cdnjs.cloudflare.com&#x2F;ajax&#x2F;libs&#x2F;font-awesome&#x2F;6.3.0&#x2F;css&#x2F;all.min.css></noscript>
+    
+    
+    <link rel="alternate" type="application/rss+xml" title="RSS" href="https://southendsolidarity.org/rss.xml">
+    
+    
+   
+    
+    
+<script src="https:&#x2F;&#x2F;cdn.jsdelivr.net&#x2F;npm&#x2F;fullcalendar@6.1.21&#x2F;index.global.min.js"></script>
+<style>
+    #calendar {
+        max-width: 900px;
+        margin: 2rem auto;
+    }
+    .fc-event-location {
+        font-size: 0.85em;
+        opacity: 0.85;
+    }
+</style>
+
+</head>
+<body>
+<div class="container">
+    
+    
+    <header>
+        <h1 class="site-header">
+            
+            <a href="https:&#x2F;&#x2F;southendsolidarity.org"><img style="width:40px; height:40px" src="https:&#x2F;&#x2F;southendsolidarity.org&#x2F;processed_images&#x2F;logo-transparent.b2dd036936f07e80.png"></a>
+            <!--<a href="https:&#x2F;&#x2F;southendsolidarity.org">Beacon Hill Solidarity</a>-->
+        </h1>
+        <nav>
+            <ul>
+            
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;southendsolidarity.org&#x2F;about">About</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;southendsolidarity.org&#x2F;volunteer">Get Involved</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;southendsolidarity.org&#x2F;blog">News</a></li>
+            
+                
+                <li><a class="active" href="https:&#x2F;&#x2F;southendsolidarity.org&#x2F;calendar">Calendar</a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;southendsolidarity.org&#x2F;projects"> </a></li>
+            
+                
+                <li><a  href="https:&#x2F;&#x2F;southendsolidarity.org&#x2F;tags"></a></li>
+            
+            
+            </ul>
+        </nav>
+    </header>
+    
+    
+<article class="post">
+    <header>
+        <h1>Events Calendar</h1>
+    </header>
+    <div class="content">
+        <p>Upcoming community events. Click an event to read more.</p>
+
+    </div>
+</article>
+
+<div id="calendar"></div>
+
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    var calendarEl = document.getElementById('calendar');
+    var calendar = new FullCalendar.Calendar(calendarEl, {
+        initialView: 'dayGridMonth',
+        height: 'auto',
+        events: [
+            
+            
+            {
+                title: "August 14th: Potluck in the Park",
+                start: "2026-08-14",
+                url: "https://southendsolidarity.org/blog/august-14th-potluck-in-the-park/",
+                extendedProps: {
+                    location: "Jefferson Park by the skatepark ",
+                    time: "5pm-8pm (until late)"
+                }
+            },
+            
+            
+            
+            {
+                title: "Community Potluck!",
+                start: "2026-08-14",
+                url: "https://southendsolidarity.org/blog/community-potluck/",
+                extendedProps: {
+                    location: "Jefferson Park",
+                    time: "5 PM - 8 PM"
+                }
+            },
+            
+            
+            
+            {
+                title: "Community Assembly and Potluck",
+                start: "2026-03-14",
+                url: "https://southendsolidarity.org/blog/potluck-031426/",
+                extendedProps: {
+                    location: "1607 S Forest St",
+                    time: "12:30 PM"
+                }
+            },
+            
+            
+            
+            {
+                title: "Community Potluck",
+                start: "2025-09-27",
+                url: "https://southendsolidarity.org/blog/potluck-080625/",
+                extendedProps: {
+                    location: "Location TBD",
+                    time: "3:00 PM"
+                }
+            },
+            
+            
+            
+            
+        ],
+        eventDidMount: function (info) {
+            var details = [];
+            if (info.event.extendedProps.time) { details.push(info.event.extendedProps.time); }
+            if (info.event.extendedProps.location) { details.push(info.event.extendedProps.location); }
+            if (details.length) {
+                var el = document.createElement('div');
+                el.className = 'fc-event-location';
+                el.textContent = details.join(' \u00b7 ');
+                info.el.appendChild(el);
+                info.el.title = details.join(' \u00b7 ');
+            }
+        }
+    });
+    calendar.render();
+});
+</script>
+
+    <footer>
+        <p>
+            
+<span class="icon-text">
+  
+
+  
+
+  
+  <a href="https://www.instagram.com/beaconhillsolidarity" aria-label="Open beaconhillsolidarity Instagram" target="_blank">
+    <span class="icon is-large">
+      <i class="fab fa-instagram fa-lg" aria-hidden="true" title="Instagram"></i>
+    </span>
+  </a>
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+  <a href="mailto:beaconhillsolidarity@proton.me" aria-label="Email beaconhillsolidarity@proton.me" target="_blank">
+    <span class="icon is-large">
+      <i class="far fa-envelope fa-lg" aria-hidden="true" title="email"></i>
+    </span>
+  </a>
+  
+
+  
+  <a href="https:&#x2F;&#x2F;southendsolidarity.org/rss.xml" aria-label="Open atom xml feed" target="_blank">
+    <span class="icon is-large">
+      <i class="fas fa-rss fa-lg" aria-hidden="true" title="atom xml feed"></i>
+    </span>
+  </a>
+  
+
+  
+</span>
+
+        </p>
+        <p>
+            
+            
+        </p>
+    </footer>
+</div>
+</body>
+</html>

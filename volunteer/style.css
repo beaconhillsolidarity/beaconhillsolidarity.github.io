@@ -1,0 +1,40 @@
+body {
+  margin: 2em;
+}
+aside {
+    background: #000000; /* same color as selected state on site menu */
+    padding: 0.3em 1em;
+    border-radius: 3px;
+    color: #fff;
+    margin-bottom: 2em;
+}
+textarea {
+  width: 100%;
+}
+.content-head {
+  font-weight: 400;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 2em 0 1em;
+}
+.is-center {
+  text-align: center;
+}
+.button-success {
+  color: white;
+  border-radius: 4px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.2);
+  background: rgb(1, 1, 1); /* this is a black */
+}
+.button-large {
+  font-size: 100%;
+}
+button {
+  float: right;
+}
+#name, #email {
+  width: 50%;
+}
+.honeypot-field {
+  display: none;
+}
