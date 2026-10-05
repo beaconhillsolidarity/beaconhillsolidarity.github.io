@@ -1,5 +1,5 @@
 +++
-title = "Spooky Community Potluck and Talk, 10/17"
+title = "Spooky Season Potluck! 10/17 12 PM-3 PM"
 date = "2026-09-28"
 authors = [" "]
 
@@ -16,11 +16,18 @@ As always, feel free to drop in whenever, stay however long, and bring a friend 
 \
 Get to know your neighbors and your neighborhood union—See you there! 
 
-**When:** Saturday, 10/17, 12 PM - 3 PM (Potluck at 12, talk at 1) \
+**When:** Saturday, 10/17, 12 PM - 3 PM (Potluck at 12, talk at 1:30, Costume contest at 2:15) \
 **Where:** 1607 S. Forest St.\
-**What to bring:** Pumpkin-related food and drinks, games, requests/offers for your neighbors  \
+**What to bring:**
+
+* Halloween and Fall festive food or drinks
+* Games
+* Requests/offers for your neighbors
+* Bring drinks! Especially hot drinks!
+* **Bring your winter gourds and pumpkins to decorate!**
+
 \
-**Access notes:** Jefferson Park is located off of the 36 bus line primarily, about 3/4 mile from the Beacon Hill Light Rail Station. Parking is located near the park on the east side. There is a paved sidewalk around the park and then grass and turf from there. No immediate stairs where we will be located.
+**Access notes:** The entrance has stairs! Please contact us if you need support with using the stairs.
 
 ![](/uploads/final_english.png)
 
