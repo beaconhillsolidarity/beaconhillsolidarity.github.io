@@ -1,5 +1,5 @@
 +++
-title = "Spanish Conversation Club "
+title = "Spanish Conversation Club - October Edition "
 date = "2026-10-04"
 authors = [" "]
 
