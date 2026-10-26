@@ -1,0 +1,77 @@
+# === Backend / login ===
+# This site uses DecapBridge (https://decapbridge.com) to handle login, since
+# Netlify Identity (the old standard way to do this) has been deprecated.
+# Members log in via DecapBridge (PKCE / SSO) - no GitHub account needed.
+backend:
+  name: git-gateway
+  repo: beaconhillsolidarity/beaconhillsolidarity.github.io
+  branch: main
+  auth_type: pkce
+  base_url: https://auth.decapbridge.com
+  auth_endpoint: /sites/c714629a-c512-459c-90cf-cdc29daef487/pkce
+  auth_token_endpoint: /sites/c714629a-c512-459c-90cf-cdc29daef487/token
+  gateway_url: https://gateway.decapbridge.com
+
+  # See who did what
+  commit_messages:
+    create: Create {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    update: Update {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    delete: Delete {{collection}} "{{slug}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    uploadMedia: Upload "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    deleteMedia: Delete "{{path}}" - {{author-name}} <{{author-login}}> via DecapBridge
+    openAuthoring: Message {{message}} - {{author-name}} <{{author-login}}> via DecapBridge
+
+# Enable PKCE fields
+auth:
+  email_claim: email
+  first_name_claim: first_name
+  last_name_claim: last_name
+  avatar_url_claim: avatar_url
+
+# Decap + Bridge logo
+logo_url: https://decapbridge.com/decapcms-with-bridge.svg
+
+# Adds a "view site" link inside Decap CMS
+site_url: https://southendsolidarity.org
+
+publish_mode: simple
+show_preview_links: false
+
+# Where uploaded images go. Existing posts each have their own "_media"
+# folder from before the CMS existed - those are untouched. New images
+# added through the CMS from now on land in one shared folder instead,
+# which keeps this config simple.
+media_folder: "static/uploads"
+public_folder: "/uploads"
+
+collections:
+  - name: "blog"
+    label: "Events & Announcements"
+    label_singular: "Post"
+    folder: "content/blog"
+    create: true
+    # Keeps files readable as TOML (+++ ... +++), matching your existing posts,
+    # instead of Decap's default of converting everything to YAML.
+    format: "toml-frontmatter"
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - label: "Publish Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        hint: "When you're posting this announcement - not necessarily the day of the event."
+      - { label: "Authors", name: "authors", widget: "hidden", default: [" "] }
+      - label: "Event Details"
+        name: "extra"
+        widget: "object"
+        required: false
+        collapsed: false
+        hint: "Only fill this in if this post is a specific dated event (like a potluck). Leave it blank for general announcements. Filling it in is what makes the event show up on the /calendar page."
+        fields:
+          - { label: "Event Date", name: "event_date", widget: "datetime", format: "YYYY-MM-DD", date_format: "YYYY-MM-DD", time_format: false, required: false }
+          - { label: "Event Time", name: "event_time", widget: "string", required: false, hint: "e.g. 3:00 PM" }
+          - { label: "Location", name: "location", widget: "string", required: false }
+      - { label: "Body", name: "body", widget: "markdown" }
